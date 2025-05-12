@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Dulce Sabor</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Dulce Sabor</h1>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="tienda.html">Tienda</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="contacto">
+          <h2>Formulario de Contacto</h2>
+          <p>¡Nos encantaría saber de ti! Por favor, completa el siguiente formulario para ponerte en contacto con nosotros.</p>
+
+          <form action="#" method="POST">
+            <!-- Campo de Nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+            <!-- Campo de Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+
+            <!-- Campo de Tipo de Pastel -->
+            <label for="tipo_pastel">Tipo de Pastel:</label>
+            <select id="tipo_pastel" name="tipo_pastel" required>
+              <option value="">Selecciona un pastel</option>
+              <option value="fresa">Pastel de Fresa</option>
+              <option value="chocolate">Pastel de Chocolate</option>
+              <option value="vainilla">Pastel de Vainilla</option>
+              <option value="red_velvet">Pastel Red Velvet</option>
+              <option value="limon">Pastel de Limón</option>
+              <option value="chocolate_blanco">Pastel de Chocolate Blanco</option>
+            </select>
+
+            <!-- Campo de Comentarios -->
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos más sobre tu pedido"></textarea>
+
+            <!-- Aceptación de términos -->
+            <label for="acepto recibir ofertas en mi correo">
+              <input type="checkbox" id="acepto recibir ofertas en mi correo" name="aceptar" required>
+              Acepto recibir ofertas en mi correo            </label>
+
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
+      </footer>
+    </div>
+  </body>
+</html>

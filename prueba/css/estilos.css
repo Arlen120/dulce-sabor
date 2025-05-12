@@ -1,0 +1,333 @@
+/* Establecer una fuente más elegante */
+/* Sección de introducción */
+/* Sección de introducción */
+.intro h2, .features h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #5e4b56;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff; /* Línea blanca debajo del título */
+  }
+  
+  /* Sección de introducción */
+  .intro {
+    padding: 40px 20px;
+    background-color: #f9f3f0;
+  }
+  
+  /* Estilo para el párrafo */
+  .intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6a4e59;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Ajustar la imagen en la sección de introducción */
+  .intro img {
+    width: 100%;
+    max-width: 400px; /* Imagen más pequeña */
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  /* Sección de lo mejor de nuestra pastelería */
+  .features {
+    padding: 40px 20px;
+    background-color: #f9f3f0;
+  }
+  
+  .features p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6a4e59;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .image-gallery img {
+    width: 30%; /* Cada imagen ocupa un 30% del ancho */
+    height: auto;
+    margin: 10px;
+    border-radius: 10px; /* Esquinas redondeadas para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .intro h2, .features h2 {
+      font-size: 2rem;
+    }
+  
+    .intro p, .features p {
+      font-size: 1rem;
+    }
+  
+    .image-gallery {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .image-gallery img {
+      width: 80%; /* Aumentar el tamaño de las imágenes en pantallas pequeñas */
+      margin: 10px 0;
+    }
+  }
+  
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  /* Estilo para el párrafo */
+  .intro p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Aumenta la altura de la línea para mayor legibilidad */
+    color: #6a4e59; /* Color suave para el texto */
+    max-width: 800px; /* Establece un ancho máximo para que las líneas no sean tan largas */
+    margin: 0 auto; /* Centra el párrafo */
+    padding: 0 15px; /* Agrega algo de espacio a los lados */
+  }
+  
+  /* Ajuste para pantallas más pequeñas */
+  @media (max-width: 600px) {
+    .intro p {
+      font-size: 1rem; /* Disminuye ligeramente el tamaño de la fuente en pantallas pequeñas */
+      padding: 0 10px; /* Agrega un poco más de espacio en pantallas pequeñas */
+    }
+  }
+  
+body {
+    font-family: 'Playfair Display', serif; /* Cambiamos la fuente */
+    background-color: #f9f3f0; /* Fondo suave en color pastel */
+    color: #333; /* Texto oscuro para buen contraste */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabecera */
+  header {
+    background-color: #f2c1d1; /* Color pastel suave para el encabezado */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #5e4b56; 
+    margin: 0;
+    font-family: 'Playfair Display', serif; 
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #5e4b56;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #e68a8a; 
+  }
+  
+
+  main {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  main h2 {
+    font-size: 2.5rem;
+    color: #d47b7b; 
+    font-family: 'Playfair Display', serif; 
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    color: #6a4e59; 
+    margin: 20px 0;
+  }
+  
+  .img-responsive {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  footer {
+    background-color: #f2c1d1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    color: #5e4b56;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+ 
+.tienda {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .tienda h2 {
+    font-size: 2.5rem;
+    color: #d06f73;
+    margin-bottom: 20px;
+    border-bottom: 3px solid white; 
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .tienda p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+ 
+  .producto {
+    background-color: #f2f1f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05); 
+  }
+  
+  .producto h3 {
+    font-size: 1.5rem;
+    color: #d06f73;
+    margin: 10px 0;
+  }
+  
+  .producto .precio {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .productos {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .productos {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+/*contacto*/
+/* Estilos para la sección de contacto */
+.contacto {
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contacto h2 {
+    font-size: 2.5rem;
+    color: #d06f73;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contacto p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Estilo para los campos del formulario */
+  label {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #d06f73;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c05c5b;
+  }
+  
+  /* Estilo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .contacto {
+      padding: 30px 20px;
+    }
+  }
+  
